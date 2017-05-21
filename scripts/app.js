@@ -3,7 +3,7 @@ window.onload = function() {
 }
 
 
-//============Change Word Object================//
+
 var changeWords = {
 		word: "Traci",
 			displayWord: function() {
@@ -31,37 +31,6 @@ var changeWords = {
 			this.displayWord();	
 		}	
 
-	};
 
 
-//=====================Button Handler Object========================//
-
-var buttonHandlers = {
-	displayWord: function() {
-		changeWords.displayWord();
-	},
-
-	addLetterToEnd: function() {
-		changeWords.addLetterToEnd();
-	},
-
-	addLetterToBeg: function() {
-		changeWords.addLetterToBeg();
-	},
-
-	removeLetterFromEnd: function() {
-		changeWords.removeLetterFromEnd();
-	},
-
-	removeLetterFromBeg: function() {
-		changeWords.removeLetterFromBeg();
 	}
-
-};
-
-
-
-
-
-
-

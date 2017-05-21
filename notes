@@ -1,0 +1,170 @@
+type in a word - create an array 
+button to remove a letter to make a new word
+
+to add to the beginning of the word - unshift('w')
+to remove at the beginning of th word - shift('w')
+to add to end - push ("w")
+to remove at the end - pop ("w")
+
+display on screen 
+use the toString method
+
+button to add a letter
+display on screen
+
+clear out and begin with a new word
+
+
+===========================
+version one
+1. should have a place to store the word
+	myWord = "word"
+
+2. should have a place to display the word
+
+3. should have a way to add a letter
+	myWord + "letter" <---adds at the end
+
+4. should have a way to remove a letter
+
+myWord.str(-1)
+===============================
+version two
+1. a function to display the word
+		var myWord = "word"
+
+		function displayWord() {
+			console.log(myWord)
+		}
+
+		displayWord()
+
+2. a function to ADD a letter to the END of the word
+
+		var myWord = "word"
+
+		function addLetterToEnd(letter) {
+			myWord = myWord + letter
+			console.log(myWord);
+		}
+		addLetterToEnd("e")
+
+2a. a function to ADD a letter to the BEGINNING of the word
+
+		var myWord = "word"
+
+		function addLetterToBeginning(letter) {
+			myWord = letter + myWord;
+			console.log(myWord)
+
+		}
+
+3. a function to REMOVE a letter from the END of the word
+		var myWord = "word"
+
+		function removeLetterFromEnd() {
+			newWord = myWord.slice(-1)
+
+			console.log(myWord)
+
+		}
+		removeLetterFromEnd()
+
+
+3a. a function to REMOVE a letter from the END of the word and then return the new word
+
+	var myWord = "word"	
+
+	function removeLetterFromEndAndReturn() {
+		newWord = myWord.slice(0,-1)
+		console.log(newWord)	
+	}	
+	removeLetterFromEndAndReturn() 
+
+4. a function to REMOVE a letter from the BEGINNING of the word and then return the new word
+
+	var myWord = "word"	
+
+	function removeLetterFromBegAndReturn() {
+		newWord = myWord.slice(1)
+		console.log(newWord)	
+	}	
+	removeLetterFromBegAndReturn()
+
+
+
+==========================	
+version three
+
+1. store the word on an object
+		var changeWords = {
+			word:"Traci",
+			displayWord: function() {
+				console.log(this.word)
+			}
+		}	
+
+
+2. display the word method
+	
+		var changeWords = {
+			word: "Traci",
+			displayWord: function() {
+			console.log("My Word", this.word)
+			},
+
+			addLetterToEnd: function (letter) {
+			this.word = this.word + (letter);
+			this.displayWord();
+		}
+
+
+	}
+
+
+
+3. add a letter to the end method
+4. add a letter to the beginning method
+5. remove a letter at the end method
+
+		var changeWords = {
+			word: "Traci",
+			displayWord: function() {
+			console.log("My Word", this.word)
+		},
+
+			addLetterToEnd: function(letter) {
+			this.word = this.word + (letter);
+			this.displayWord();
+		},
+
+			addLetterToBeg: function(letter){
+			this.word = (letter) + this.word;
+			this.displayWord();
+
+		},
+			removeLetterFromEnd: function() {
+			this.word = this.word.slice(0,-1);
+			this.displayWord();
+		
+		},
+
+			removeLetterFromBeg: function() {
+			this.word = this.word.slice(1);
+			this.displayWord();	
+		}	
+
+
+
+	}
+
+
+
+
+
+
+6. add a letter to the beginning method
+
+
+
+
