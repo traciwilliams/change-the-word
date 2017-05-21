@@ -34,30 +34,43 @@ var changeWords = {
 	};
 
 
+var displayWordsButton = document.getElementById("displayWordsButton");
+console.log(displayWordsButton);
+// displayWordsButton.addEventListener("click", function(){
+// 	changeWords.displayWord();
+// })
+
+
 //=====================Button Handler Object========================//
 
-var buttonHandlers = {
-	displayWord: function() {
-		changeWords.displayWord();
-	},
 
-	addLetterToEnd: function() {
-		changeWords.addLetterToEnd();
-	},
 
-	addLetterToBeg: function() {
-		changeWords.addLetterToBeg();
-	},
 
-	removeLetterFromEnd: function() {
-		changeWords.removeLetterFromEnd();
-	},
 
-	removeLetterFromBeg: function() {
-		changeWords.removeLetterFromBeg();
-	}
+// var buttonHandlers = {
+// 	displayWord: function() {
+// 		var displayWordButton = document.getElementById("displayWordButton");
+// 		console.log(displayWordButton);
+// 		changeWords.displayWord();
+// 	},
 
-};
+// 	addLetterToEnd: function() {
+// 		changeWords.addLetterToEnd();
+// 	},
+
+// 	addLetterToBeg: function() {
+// 		changeWords.addLetterToBeg();
+// 	},
+
+// 	removeLetterFromEnd: function() {
+// 		changeWords.removeLetterFromEnd();
+// 	},
+
+// 	removeLetterFromBeg: function() {
+// 		changeWords.removeLetterFromBeg();
+// 	}
+
+// };
 
 
 

@@ -33,4 +33,27 @@ var changeWords = {
 
 
 
-	}
+	};
+
+
+
+var displayWordsButton = document.getElementById("displayWordsButton");
+console.log(displayWordsButton);
+
+displayWordsButton.addEventListener("click", function(){
+	changeWords.displayWord();
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
