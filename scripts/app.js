@@ -37,13 +37,36 @@ var changeWords = {
 
 
 
-var displayWordsButton = document.getElementById("displayWordsButton");
-console.log(displayWordsButton);
+// var displayWordsButton = document.getElementById("displayWordsButton");
+// console.log(displayWordsButton);
 
-displayWordsButton.addEventListener("click", function(){
-	changeWords.displayWord();
-})
+// displayWordsButton.addEventListener("click", function(){
+// 	changeWords.displayWord();
+// })
 
+var buttonHandlers = {
+	displayWord: function() {
+		changeWords.displayWord();
+	},
+	addLetterToEnd: function() {
+		var userInputEnd = document.getElementById("addLetterToEndInput")
+		changeWords.addLetterToEnd(userInputEnd.value);
+		userInputEnd.value = "";
+	},
+	addLetterToBeg: function() {
+		var userInputBeg = document.getElementById("addLetterToBegInput")
+		changeWords.addLetterToBeg(userInputBeg.value);
+		userInputBeg.value = "";
+	},
+	removeLetterFromEnd: function() {
+		changeWords.removeLetterFromEnd();
+	},
+	removeLetterFromBeg: function() {
+		changeWords.removeLetterFromBeg();
+	},
+
+
+};
 
 
 
