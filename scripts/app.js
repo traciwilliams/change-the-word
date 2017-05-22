@@ -3,13 +3,6 @@ window.onload = function() {
 }
 
 
-
-
-
-
-
-
-
 var changeWords = {
 		//word: "ab",
 		word: ["ab"],
@@ -36,10 +29,12 @@ var changeWords = {
 			removeLetterFromBeg: function() {
 			this.word = this.word.slice(1);
 			this.displayWord();	
-		}	
+		},
 
-
-
+			startAgain: function() {
+				this.word = "";
+				this.displayWord();
+		}
 	};
 
 var view = {
@@ -47,22 +42,13 @@ var view = {
 		// for (var i = 0; i < word.length; i++) {
 		var wordUl = document.querySelector("ul");	
 		var wordLi = document.createElement("li"); 
-		wordLi.textContent = changeWords.word;
+		wordLi.textContent = changeWords.word; //text content from the array
 		wordUl.appendChild(wordLi);
 	// }
   }	
 };
 
 
-
-
-
-// var displayWordsButton = document.getElementById("displayWordsButton");
-// console.log(displayWordsButton);
-
-// displayWordsButton.addEventListener("click", function(){
-// 	changeWords.displayWord();
-// })
 
 var buttonHandlers = {
 	displayWord: function() {
@@ -90,7 +76,9 @@ var buttonHandlers = {
 		changeWords.removeLetterFromBeg();
 		view.displayWord();
 	},
-
+	startAgain: function() {
+		view.displayWord() = "";
+	}
 
 };
 
