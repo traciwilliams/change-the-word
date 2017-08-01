@@ -5,3 +5,7 @@ body {
 li {
 	list-style: none;
 }
+
+.userWord input[type=text] {
+	display: hidden;
+}

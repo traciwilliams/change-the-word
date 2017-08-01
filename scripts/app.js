@@ -39,12 +39,10 @@ var changeWords = {
 
 var view = {
 	displayWord: function() {
-		// for (var i = 0; i < word.length; i++) {
 		var wordUl = document.querySelector("ul");	
 		var wordLi = document.createElement("li"); 
 		wordLi.textContent = changeWords.word; //text content from the array
 		wordUl.appendChild(wordLi);
-	// }
   }	
 };
 
